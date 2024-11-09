@@ -93,6 +93,29 @@ Once you have Qt set up and installed, use the maintenance tool and install the 
 ![alt text](docs/images/image2.png)
 ![alt text](docs/images/image.png)
 
+Should you encounter any other dependency issues with Qt (the Qt folder should have everything for Qt itself, but other dependencies might include the following):
+
+```
+# Qt Charts dependencies
+sudo apt-get install libgl1-mesa-dev
+
+# Qt Multimedia dependencies
+sudo apt-get install libasound2-dev libpulse-dev \
+    gstreamer1.0-plugins-base gstreamer1.0-plugins-good \
+    gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly \
+    gstreamer1.0-libav \
+    libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev \
+    libopenal-dev
+
+# Qt Positioning dependencies
+sudo apt-get install libbluetooth-dev \
+    libgypsy-dev \
+    libgconf2-dev
+
+# Qt WebChannel dependencies
+sudo apt-get install libssl-dev
+```
+
 ## Step 2: Build & Run
 
 Once you've installed ROS2 Humble, you should have a folder ``/opt/ros/humble``.
