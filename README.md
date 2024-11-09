@@ -45,7 +45,7 @@ If you're on **macOS**, there are also some options for you to get this repo up 
 
 You can also use Multipass which is Canonical's official way to get Ubuntu in particular up and running on macOS systems which also supports Apple silicon (which at the time of writing are the M-series processors). Setting this up is quite simple and all you'll need is to make sure you have [Homebrew](https://brew.sh/) installed. You can refer to [this video](https://www.youtube.com/watch?v=oi8f6hVI2P4) for full installation instructions.
 
-### ROS2 Humble
+### ROS2 Humble & PX4
 Simply run the following to get ROS2 Humble's dependencies and ROS2 itself
 
 ```
@@ -69,6 +69,8 @@ pip install --user -U empy==3.3.4 pyros-genmsg setuptools
 ```
 
 This script was taken from [this user guide on PX4s documentation](https://docs.px4.io/main/en/ros2/user_guide.html), which was subsequently taken from [the ROS 2 documentation for installing ROS2 Humble on Ubuntu](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html). Refer to each for more detail and/or if you encounter any issues.
+
+For PX4, run the script under ``src/PX4-Autopilot/Tools/setup/ubuntu.sh`` to install all dependencies for PX4 autopilot. You should restart your computer after this is finished.
 
 ### QGroundControl Daily Build
 QGroundControl is a [Ground Control Station](https://en.wikipedia.org/wiki/UAV_ground_control_station) software that is typically used in conjunction with PX4 autopilot systems.
